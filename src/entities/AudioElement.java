@@ -51,14 +51,14 @@ public class AudioElement extends MultimediaElement implements AudioVideoPlayer 
     }
 
     @Override
-    public void play(int duration,String title,int volume) {
+    public void play() {
         String volumeChar = "";
         for (int i = 0; i < volume; i++) {
             volumeChar += "!";
         }
 
         for (int i = 0; i <= duration; i++) {
-            System.out.println(i + " " + title + volumeChar);
+            System.out.println(i + " " + getTitle()+" " + volumeChar);
         }
     }
 
