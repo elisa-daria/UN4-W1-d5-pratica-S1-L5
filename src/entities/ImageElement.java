@@ -6,7 +6,7 @@ public class ImageElement extends MultimediaElement implements BrightnessSetter 
     public ImageElement(String title) {
         super(title);
     }
-    
+
 
     @Override
     public void lowBrightness() {
@@ -18,6 +18,6 @@ public class ImageElement extends MultimediaElement implements BrightnessSetter 
 
     }
 
-    //it has its own method toshow()
+    //it has its own method show()
 
 }

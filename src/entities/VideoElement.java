@@ -22,8 +22,15 @@ public class VideoElement extends MultimediaElement implements AudioVideoPlayer,
 
     }
 
-    public void play() {
+    public void play(int duration,String title,int volume) {
+        String volumeChar = "";
+        for (int i = 0; i < volume; i++) {
+            volumeChar += "!";
+        }
 
+        for (int i = 0; i <= duration; i++) {
+            System.out.println(i + " " + title + volumeChar);
+        }
     }
 
 
