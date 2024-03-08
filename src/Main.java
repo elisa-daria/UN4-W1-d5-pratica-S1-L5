@@ -58,7 +58,7 @@ public class Main {
                     media[i]=new ImageElement(imageTitle,imageBrightness);
                     break;
                 default:
-                    System.out.println("ERRORE: media inesistente");
+                    System.err.println("ERRORE: media inesistente");
 
 
             }
