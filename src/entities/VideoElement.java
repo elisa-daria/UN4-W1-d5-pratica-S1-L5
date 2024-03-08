@@ -88,8 +88,8 @@ public class VideoElement extends MultimediaElement implements AudioVideoPlayer,
             volumeChar += "!";
         }
         String brightnessChar = "";
-        for (int i = 0; i < volume; i++) {
-            volumeChar += "*";
+        for (int i = 0; i < brightness; i++) {
+            brightnessChar += "*";
         }
 
         for (int i = 0; i <= duration; i++) {
