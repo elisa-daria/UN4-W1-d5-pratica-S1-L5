@@ -4,13 +4,31 @@ import interfaces.AudioVideoPlayer;
 import interfaces.BrightnessSetter;
 
 public class VideoElement extends MultimediaElement implements AudioVideoPlayer, BrightnessSetter {
-    public VideoElement(String title) {
+    //attributes
+    private int duration;
+    private int volume;
+    public VideoElement(String title,int duration, int volume) {
         super(title);
+        this.setDuration(duration);
+        this.setVolume(volume);
+
     }
 
+    public int getDuration() {
+        return duration;
+    }
 
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
 
+    public int getVolume() {
+        return volume;
+    }
 
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
 
     @Override
     public void turnUpVolume() {

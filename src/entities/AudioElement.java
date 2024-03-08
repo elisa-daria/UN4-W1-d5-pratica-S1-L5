@@ -7,6 +7,8 @@ public class AudioElement extends MultimediaElement implements AudioVideoPlayer 
     //attributes
     private int duration;
     private int volume;
+    private static final int MIN_VOLUME = 0;
+    private static final int MAX_VOLUME = 5;
 
 
 
@@ -35,11 +37,16 @@ public class AudioElement extends MultimediaElement implements AudioVideoPlayer 
 
     @Override
     public void turnUpVolume() {
-
+        if(volume<MAX_VOLUME){
+        volume++;
+    }
     }
 
     @Override
     public void turnDownVolume() {
+        if(volume>MIN_VOLUME){
+            volume--;
+        }
 
     }
 
