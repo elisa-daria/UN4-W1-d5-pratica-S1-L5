@@ -60,9 +60,23 @@ public class Main {
                 default:
                     System.out.println("ERRORE: media inesistente");
 
-        }
 
-}
+            }
+        }
+        int laScelta;
+        do {
+            System.out.println("Scegli il tipo di media da consumare: digita un numero da 1 a 5 o 0 per terminare: ");
+            laScelta = Integer.parseInt(scanner.nextLine());
+            if (laScelta >= 1 && laScelta <= 5) {
+                if (media[laScelta - 1] instanceof ImageElement) {
+                    ((ImageElement) media[laScelta - 1]).show();
+                }
+                media[laScelta - 1].play();
+            } else if (laScelta != 0) {
+                System.out.println("Scelta non valida. Riprova.");
+            }
+        } while (laScelta != 0);
+        scanner.close();
     }
 }
 
