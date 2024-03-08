@@ -1,6 +1,6 @@
 package entities;
 
-abstract class MultimediaElement {
+public abstract class MultimediaElement {
    //attributes
     private  String title;
 
@@ -20,5 +20,8 @@ abstract class MultimediaElement {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public void play() {
     }
 }

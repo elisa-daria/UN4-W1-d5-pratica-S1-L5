@@ -78,7 +78,7 @@ public class VideoElement extends MultimediaElement implements AudioVideoPlayer,
     @Override
     public void incrementBrightness() {
         if(brightness<MAX_BRIGHTNESS){
-            brightness--;
+            brightness++;
         }
     }
 
@@ -96,8 +96,4 @@ public class VideoElement extends MultimediaElement implements AudioVideoPlayer,
             System.out.println(i + " " + getTitle() +" "+ volumeChar+" "+brightnessChar);
         }
     }
-
-
-
-
 }

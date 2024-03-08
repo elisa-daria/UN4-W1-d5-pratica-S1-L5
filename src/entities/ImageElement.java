@@ -45,8 +45,8 @@ public void show(){
     String brightnessChar = "";
     for (int i = 0; i < brightness; i++) {
         brightnessChar += "*";
-        System.out.println(getTitle() +"  "+brightnessChar);
     }
+    System.out.println(getTitle() +"  "+brightnessChar);
 }
 
 }
